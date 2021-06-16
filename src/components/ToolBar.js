@@ -4,7 +4,7 @@ import logo from "../images/nav-logo.png";
 import "./toolbar.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 const Toolbar = (props) => (
   <Container>
     <Row>
