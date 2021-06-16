@@ -2,6 +2,7 @@ import React from "react";
 // import { Form, Button } from "react-bootstrap";
 // import DateTimePicker from "react-datetime-picker";
 import "./timer.css"
+
 export default class Timer extends React.Component {
   state = {
     endDate: new Date("August 1, 2021 00:00:00"),
