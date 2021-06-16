@@ -20,18 +20,20 @@ import sectionFourImg2 from "./images/section-4-img2.png";
 import sectionFiveIcon from "./images/section-5-icon.png";
 import Timer from "./components/countdown timer/timer";
 import sectionSixImg from "./images/section-6-img.png";
-import section7Img from "./images/section-7-avatar.png";
-import section8Img from "./images/section-8-img.png";
+// import section7Img from "./images/section-7-avatar.png";
+// import section8Img from "./images/section-8-img.png";
 import section10Icon from "./images/section-10-icon.png";
 import section10Icon2 from "./images/section-10-icon2.png";
-import section11Img from "./images/sponsor-1.png";
-import section11Img2 from "./images/sponsor-2.png";
+// import section11Img from "./images/sponsor-1.png";
+// import section11Img2 from "./images/sponsor-2.png";
 import section11Img3 from "./images/section-11-img.png";
 import section12Icon from "./images/section-12-icon.png";
 import emailImg from "./images/mail 1.png";
 import facebookImg from "./images/facebook 1.png";
 import twitterImg from "./images/twitter 1.png";
 import instImg from "./images/inst 1.png";
+
+
 const App = () => {
   return (
     <div className="main-container">
@@ -55,10 +57,9 @@ const App = () => {
                   platform for entrepreneurship and next-generation innovation.
                 </div>
                 <a href="https://event.hackhub.com/event/oppohack2021">
-                <Button className="section-1-btn">
-                  
-                  <img src={regButton} alt="Register Button" />
-                </Button>
+                  <Button className="section-1-btn">
+                    <img src={regButton} alt="Register Button" />
+                  </Button>
                 </a>
               </div>
             </Col>
@@ -250,11 +251,13 @@ const App = () => {
             <div className="section-4-subtitle2">Saturday August 14, 2021</div>
             <div className="section-4-subtitle2">Sunday August 15, 2021</div>
             <div className="section-4-btn">
-              <img
-                src={sectionFourBtn}
-                style={{ width: "100%" }}
-                alt="section-4-btn"
-              />
+              <a href="https://event.hackhub.com/event/oppohack2021">
+                <img
+                  src={sectionFourBtn}
+                  style={{ width: "100%" }}
+                  alt="section-4-btn"
+                />
+              </a>
             </div>
             <div className="section-4-img">
               <img
@@ -463,14 +466,14 @@ const App = () => {
               />
             </div>
             <a href="https://event.hackhub.com/event/oppohack2021">
-            <div className="section-5-btn-container">
-              <img
-                className="section-5-btn"
-                src={regButton}
-                style={{ width: "100%" }}
-                alt="section-5-img"
-              />
-            </div>
+              <div className="section-5-btn-container">
+                <img
+                  className="section-5-btn"
+                  src={regButton}
+                  style={{ width: "100%" }}
+                  alt="section-5-img"
+                />
+              </div>
             </a>
           </Col>
         </Row>
@@ -556,7 +559,7 @@ const App = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="section-7-container">
+      {/* <Container className="section-7-container">
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
@@ -612,8 +615,8 @@ const App = () => {
             </div>
           </Col>
         </Row>
-      </Container>
-      <Container className="section-8-container">
+      </Container> */}
+      {/* <Container className="section-8-container">
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
@@ -635,7 +638,7 @@ const App = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
       <Container className="section-9-container">
         <Row>
           <Col sm="12" md="12" lg="12">
@@ -749,8 +752,8 @@ const App = () => {
         </Row>
       </Container>
       <Container className="section-11-container">
-        <div className="section-11-heading">Sponsors</div>
-        <Row>
+        {/* <div className="section-11-heading">Sponsors</div> */}
+        {/* <Row>
           <Col
             sm="12"
             md="6"
@@ -817,7 +820,7 @@ const App = () => {
           >
             <img src={section11Img2} alt="sponsor-1" />
           </Col>
-        </Row>
+        </Row> */}
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-11-img-container">
@@ -827,35 +830,39 @@ const App = () => {
                 style={{ width: "100%" }}
               />
             </div>
-            
-            <div className="section-11-btn-container">
-            <a href="https://event.hackhub.com/event/oppohack2021">
-              <Button className="section-1-btn">
-                <img src={regButton} alt="Register Button" />
 
-              </Button>
+            <div className="section-11-btn-container">
+              <a href="https://event.hackhub.com/event/oppohack2021">
+                <Button className="section-1-btn">
+                  <img src={regButton} alt="Register Button" />
+                </Button>
               </a>
             </div>
-            
           </Col>
         </Row>
       </Container>
-      <Container className="section-12-container">
+      <Container className="section-12-container" id="contact-container">
         <Row>
-          <Col sm="12" md="12" lg="2" style={{paddingTop:"20px"}}>
+          <Col sm="12" md="12" lg="2" style={{ paddingTop: "20px" }}>
             <img src={section10Icon} alt="section-9-icon" />
           </Col>
-          <Col sm="12" md="12" lg="3" style={{paddingTop:"20px"}}>
+          <Col sm="12" md="12" lg="3" style={{ paddingTop: "20px" }}>
             <img src={section12Icon} alt="section-9-icon" />
           </Col>
-          <Col sm="12" md="0" lg="2" style={{paddingTop:"20px"}}></Col>
-          <Col sm="12" md="12" lg="2" style={{paddingTop:"20px"}}>
+          <Col sm="12" md="0" lg="2" style={{ paddingTop: "20px" }}></Col>
+          <Col sm="12" md="12" lg="2" style={{ paddingTop: "20px" }}>
             <div className="section-12-text">Contact Us</div>
           </Col>
-          <Col sm="12" md="12" lg="3" style={{paddingTop:"20px"}}>
-            <img src={emailImg} alt="social media-icon" style={{
-                    paddingLeft: "30px",
-                  }}/>
+          <Col sm="12" md="12" lg="3" style={{ paddingTop: "20px" }}>
+            <a href="mailto:events@hackhub.com">
+              <img
+                src={emailImg}
+                alt="social media-icon"
+                style={{
+                  paddingLeft: "30px",
+                }}
+              />
+            </a>
             <Router>
               <a href="https://www.facebook.com/hackhubio/">
                 <img

@@ -1,5 +1,7 @@
 import React from "react";
 import "./sidedrawer.css";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const sideDrawer = props => {
   let drawerClasses = ["side-drawer"];
@@ -9,17 +11,21 @@ const sideDrawer = props => {
   }
   return (
     <nav className={drawerClasses.join(" ")}>
+      <Router>
       <ul>
         <li>
-          <a href="/">SCHEDULE</a>
+          <a href="https://event.hackhub.com/event/oppohack2021">SCHEDULE</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/">SPONSORS</a>
-        </li>
+        </li> */}
         <li>
+        <HashLink smooth to="/#contact-container">
           <a href="/">CONTACT</a>
+          </HashLink>
         </li>
       </ul>
+      </Router>
     </nav>
   );
 };

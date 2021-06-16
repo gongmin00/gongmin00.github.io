@@ -20,7 +20,7 @@
 } */
 .main-container {
   background: #231f20;
-  background-image: url(./images/bg-img.png);
+  background-image: url(./images/bg-img2.png);
   background-size: cover;
 }
 .section-1 {
@@ -333,6 +333,9 @@ font-size: 24px;
   .section-5-img-icon {
     margin-bottom: 50px;
   }
+  .section-12-container{
+    text-align: center;
+}
 }
 @media (max-width: 768px) {
   .section-1-title {
