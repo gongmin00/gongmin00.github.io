@@ -24,6 +24,11 @@ const sideDrawer = props => {
           <a href="/">CONTACT</a>
           </HashLink>
         </li>
+        <li >
+                  <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
+                  Terms & Conditions
+                  </a>
+                </li>
       </ul>
       </Router>
     </nav>

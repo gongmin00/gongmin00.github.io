@@ -866,7 +866,7 @@ const App = () => {
               />
             </a>
             <Router>
-              <a href="https://www.facebook.com/hackhubio/">
+              <a href="https://www.facebook.com/hackhubio/" target="_blank" rel="noreferrer">
                 <img
                   src={facebookImg}
                   alt="social media-icon"
@@ -875,7 +875,7 @@ const App = () => {
                   }}
                 />
               </a>
-              <a href="https://twitter.com/hackhubio?lang=en">
+              <a href="https://twitter.com/hackhubio?lang=en" target="_blank" rel="noreferrer">
                 <img
                   src={twitterImg}
                   alt="social media-icon"
@@ -884,7 +884,7 @@ const App = () => {
                   }}
                 />
               </a>
-              <a href="https://www.instagram.com/hackhub.io/?hl=en">
+              <a href="https://www.instagram.com/hackhub.io/?hl=en" target="_blank" rel="noreferrer">
                 <img
                   src={instImg}
                   alt="social media-icon"
