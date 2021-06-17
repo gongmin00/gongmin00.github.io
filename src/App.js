@@ -32,11 +32,12 @@ import emailImg from "./images/mail 1.png";
 import facebookImg from "./images/facebook 1.png";
 import twitterImg from "./images/twitter 1.png";
 import instImg from "./images/inst 1.png";
-
+import MetaInfo from "./components/MetaInfo"
 
 const App = () => {
   return (
     <div className="main-container">
+      <MetaInfo />
       <div className="section-1">
         <NavBar />
         <div className="section-1-placeholder"></div>
@@ -68,6 +69,7 @@ const App = () => {
                 className="section-1-img"
                 src={sectionOneImg}
                 alt="section-1-img2"
+                style={{width:"90%"}}
               />
             </Col>
           </Row>
@@ -87,7 +89,7 @@ const App = () => {
               <img
                 src={sectionTwoImg}
                 alt="section two img"
-                style={{ width: "100%" }}
+                style={{ width: "80%" }}
               />
             </div>
             {/* <div className="section-2-icon">
@@ -236,7 +238,7 @@ const App = () => {
           </Col>
         </Row>
         <Row>
-          <Col sm="12" md="12" lg="12">
+          <Col className="section-4-subtitle-container" sm="12" md="12" lg="12">
             <div className="section-4-subtitle">
               Preliminary Screening 2021/06/01 - 2021/08/01
             </div>
@@ -262,7 +264,7 @@ const App = () => {
             <div className="section-4-img">
               <img
                 src={sectionFourImg}
-                style={{ width: "100%" }}
+                style={{ width: "70%" }}
                 alt="section-4-img"
               />
             </div>
@@ -553,7 +555,7 @@ const App = () => {
               <img
                 src={sectionSixImg}
                 alt="section-6-img"
-                style={{ width: "100%" }}
+                style={{ width: "70%" }}
               />
             </div>
           </Col>
@@ -827,7 +829,7 @@ const App = () => {
               <img
                 src={section11Img3}
                 alt="section-11-img"
-                style={{ width: "100%" }}
+                style={{ width: "70%" }}
               />
             </div>
 

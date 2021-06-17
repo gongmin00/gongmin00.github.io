@@ -1,70 +1,92 @@
+@font-face {
+  font-family: 'VCR OSD mono';
+  src: url('../../font/FontsFree-Net-VCR_OSD_MONO_1.001.ttf');
+}
 .form-label {
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-  .btn-primary {
-    letter-spacing: 1px;
-  }
+.btn-primary {
+  letter-spacing: 1px;
+}
 
-  .date-time-form {
-    text-align: center;
-  }
-  .date-time-title{
-      color:#7FCACD;
-      font-size:40px!important;
-      font-weight: 700;
-  }
-  h1 {
-    text-transform: uppercase;
-    margin-bottom: 50px;
-  }
+.date-time-form {
+  text-align: center;
+}
+.date-time-title {
+  color: #7fcacd;
+  font-size: 40px !important;
+  font-weight: 700;
+}
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
 
-  .error-msg {
-    color: #ff0000;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
+.error-msg {
+  color: #ff0000;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-  .react-datetime-picker {
-    padding-left: 10px;
-  }
+.react-datetime-picker {
+  padding-left: 10px;
+}
 
-  .counter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    margin: 61px auto;
-    padding: 10px;
-    background: transparent;
-  }
+.counter {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  width: 70%;
+  margin: 61px auto;
+  padding: 10px;
+  background: transparent;
+}
 
+.counter .time {
+  margin-right: 30px;
+}
+
+.counter .time-value {
+  padding: 1px;
+  /* font-size: 500%; */
+  font-size: 6vw;
+  color: #fff;
+  line-height: 1;
+  background: linear-gradient(
+    180deg,
+    #2c3031 0%,
+    #2c3031 50%,
+    #3a4a4b 0%,
+    #3a4a4b 50%
+  );
+  /* min-height: 180px; */
+  border-radius: 14px;
+  padding: 20px;
+  /* min-height: 138px; */
+  text-align: center;
+  font-family: VCR OSD mono;
+}
+.counter .time-label {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 32px;
+  padding-top: 20px;
+}
+
+.time-label {
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
   .counter .time {
-    margin-right: 30px;
-    
-  }
-
-  .counter .time-value {
-    padding: 1px;
-    font-size: 500%;
-    color: #fff;
-    line-height: 1;
-    background:linear-gradient(180deg, #2c3031 0%, #2c3031 50%, #3a4a4b 0%, #3a4a4b 50%);
-    min-height: 180px;
-    border-radius: 14px;
-    padding:20px;
-    min-height: 138px;
+    margin-right: 10px;
   }
   .counter .time-label{
-      font-weight:700!important;
-      font-size:24px!important;
-      line-height: 32px;
-      padding-top:20px;
+    font-size: 14px!important;
+    font-weight: 400!important;
   }
-
-  .time-label {
-    text-align: center;
-    font-size: 20px;
-  }
+}
