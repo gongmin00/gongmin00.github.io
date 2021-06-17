@@ -17,7 +17,7 @@ const Toolbar = (props) => (
             <SideMenu click={props.drawerToggleClickHandler} />
           </div>
           {/* </Col> */}
-          <Col sm="9" md="7" lg="7" style={{ width: "100%" }}>
+          <Col sm="9" md="5" lg="6" style={{ width: "100%" }}>
             <div className="toolbar_logo">
               <a href="/">
                 <img src={logo} alt="nav-logo" />
@@ -25,12 +25,12 @@ const Toolbar = (props) => (
             </div>
             <div className="spacer" />
           </Col>
-          <Col md="5" lg="5" style={{ width: "58%" }}>
+          <Col md="7" lg="6" style={{ width: "58%" }}>
             <Router>
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a href="https://event.hackhub.com/event/oppohack2021">
+                  <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer">
                     SCHEDULE
                   </a>
                 </li>
@@ -41,6 +41,11 @@ const Toolbar = (props) => (
                   <HashLink smooth to="/#contact-container">
                     <a href="/music">CONTACT</a>
                   </HashLink>
+                </li>
+                <li style={{minWidth:"230px"}}>
+                  <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
+                  Terms & Conditions
+                  </a>
                 </li>
               </ul>
             </div>
