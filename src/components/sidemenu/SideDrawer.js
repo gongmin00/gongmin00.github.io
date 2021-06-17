@@ -14,7 +14,7 @@ const sideDrawer = props => {
       <Router>
       <ul>
         <li>
-          <a href="https://event.hackhub.com/event/oppohack2021">SCHEDULE</a>
+          <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer">SCHEDULE</a>
         </li>
         {/* <li>
           <a href="/">SPONSORS</a>

@@ -30,7 +30,7 @@ const Toolbar = (props) => (
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a href="https://event.hackhub.com/event/oppohack2021">
+                  <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer">
                     SCHEDULE
                   </a>
                 </li>
