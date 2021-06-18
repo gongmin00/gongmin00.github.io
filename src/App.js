@@ -3,8 +3,8 @@ import NavBar from "./components/navBar";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import mainTitle from "./images/main-title.png";
-import regButton from "./images/Reg-button.png";
+import mainTitle from "./images/main-title.svg";
+import regButton from "./images/Reg-button.svg";
 import sectionOneImg from "./images/section-1-img2.png";
 import sectionTwoImg from "./images/section-2-img(1).png";
 import sectionTwoIcon from "./images/section-2-icon.png";
@@ -22,16 +22,16 @@ import Timer from "./components/countdown timer/timer";
 import sectionSixImg from "./images/section-6-img.png";
 // import section7Img from "./images/section-7-avatar.png";
 // import section8Img from "./images/section-8-img.png";
-import section10Icon from "./images/section-10-icon.png";
-import section10Icon2 from "./images/section-10-icon2.png";
+import section10Icon from "./images/section-10-icon.svg";
+import section10Icon2 from "./images/section-10-icon2.svg";
 // import section11Img from "./images/sponsor-1.png";
 // import section11Img2 from "./images/sponsor-2.png";
 import section11Img3 from "./images/section-11-img.png";
-import section12Icon from "./images/section-12-icon.png";
-import emailImg from "./images/mail 1.png";
-import facebookImg from "./images/facebook 1.png";
-import twitterImg from "./images/twitter 1.png";
-import instImg from "./images/inst 1.png";
+import section12Icon from "./images/section-12-icon.svg";
+import emailImg from "./images/mail 1.svg";
+import facebookImg from "./images/facebook 1.svg";
+import twitterImg from "./images/twitter 1.svg";
+import instImg from "./images/inst 1.svg";
 import MetaInfo from "./components/MetaInfo"
 
 const App = () => {
@@ -169,7 +169,7 @@ const App = () => {
                 <img
                   src={sectionThreeImg}
                   alt="section-3-img"
-                  style={{ width: "100%" }}
+                  style={{ width: "70%" }}
                 />
               </div>
               <div className="section-3-img-icon">
@@ -188,7 +188,7 @@ const App = () => {
                 <img
                   src={sectionThreeImg2}
                   alt="section-3-img2"
-                  style={{ width: "100%" }}
+                  style={{ width: "70%" }}
                 />
               </div>
               <div className="section-3-img-icon">
@@ -416,8 +416,8 @@ const App = () => {
             </div>
           </Col>
         </Row>
-        <Row style={{ marginTop: "134px" }}>
-          <Col sm="12" md="12" lg="6">
+        <Row style={{ marginTop: "134px", justifyContent:"center" }}>
+          <Col sm="12" md="8" lg="5">
             <div className="section-5-text-container">
               <div className="section-5-text">
                 Project should have been around for less than 24 month;
@@ -437,16 +437,16 @@ const App = () => {
               Seeding Group
             </div>
           </Col>
-          <Col sm="12" md="12" lg="6">
+          <Col sm="0" md="0" lg="1"></Col>
+          <Col sm="12" md="8" lg="5" >
             <div className="section-5-text-container2">
               <div className="section-5-text">
-                Project should have been around for less than 24 month;
+              Project should have been around for less than 5 years;
               </div>
               <div className="section-5-text">
-                Project or company must have not raised any of non-grant funding
-                from any source;
+              Project or company must raised less than $1,000,000 of non-grant funding from any source;
               </div>
-              <div className="section-5-text">Ticket price: $ 20.</div>
+              <div className="section-5-text">Ticket price: $ 50.</div>
             </div>
             <div className="section-3-img-icon">
               <img
@@ -480,7 +480,7 @@ const App = () => {
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container style={{width:"82%", maxWidth:"1560px"}}>
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
@@ -856,7 +856,7 @@ const App = () => {
             <div className="section-12-text">Contact Us</div>
           </Col>
           <Col sm="12" md="12" lg="3" style={{ paddingTop: "20px" }}>
-            <a href="mailto:events@hackhub.com">
+            <a href="mailto:events@hackhub.com" target="_blank" rel="noreferrer">
               <img
                 src={emailImg}
                 alt="social media-icon"

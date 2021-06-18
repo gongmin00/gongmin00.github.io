@@ -40,6 +40,10 @@
 /* .section-1-content{
     max-width: 1500px!important;
 } */
+.section-1-content{
+  width:82%;
+  max-width: 1560px;
+}
 .section-1-paragraph {
   color: #ffffff;
   padding: 41px 0px 104px 20px;
@@ -56,6 +60,8 @@
 }
 .section-2-content {
   margin-top: 200px;
+  width:82%;
+  max-width: 1560px;
 }
 /* .section-2-img-container{
     position: relative;
@@ -91,6 +97,8 @@
 } */
 .section-3-content {
   margin-top: 180px;
+  width:82%;
+  max-width: 1560px;
 }
 .section-3-heading {
   font-size: 42px;
@@ -130,6 +138,10 @@
   font-size: 30px !important;
   padding-left: 10px;
 }
+.section-4-container{
+  width:82%;
+  max-width: 1560px;
+}
 .section-4-heading {
   font-size: 46px;
   text-align: center;
@@ -137,12 +149,12 @@
   margin-bottom: 54px;
   font-weight: 700;
 }
-.section-4-subtitle-container{
+/* .section-4-subtitle-container{
   background-image: url("./images/section-4-bg.png");
   background-repeat: no-repeat;
     background-position: center;
     min-height: 200px;
-}
+} */
 .section-4-subtitle {
   font-size: 26px !important;
   margin-top: 22px;
@@ -193,6 +205,8 @@
 }
 .section-5-container {
   margin: 101px auto;
+  width:82% !important;
+  max-width: 1560px !important;
 }
 .section-5-img {
   padding-left: 10%;
@@ -205,14 +219,19 @@
   border: 3px solid #73e4e1;
   box-sizing: border-box;
   border-radius: 46px;
-  padding: 128px 40px;
+  padding: 45px 39px;
+  text-align: center;
 }
 .section-5-text-container2 {
   background: rgba(45, 200, 77, 0.33);
   border: 3px solid #2dc84d;
   box-sizing: border-box;
   border-radius: 46px;
-  padding: 128px 40px;
+  padding: 45px 39px;
+  text-align: center;
+}
+.section-5-text{
+  margin-bottom: 30px;
 }
 .section-5-btn-container {
   margin: 121px auto;
@@ -228,6 +247,7 @@
 .section-6-text {
   padding-right: 40px;
   padding-left: 40px;
+  line-height: 36px !important;
 }
 .section-6-img-container {
   margin: 130px auto 0 auto;
@@ -262,6 +282,8 @@
 }
 .section-9-container {
   margin-top: 173px;
+  width: 82% !important;;
+  max-width: 1560px!important;
 }
 .section-9-text-container {
   margin-top: 55px;
@@ -274,6 +296,8 @@
 }
 .section-10-container {
   margin-top: 189px;
+  width: 82% !important;;
+  max-width: 1560px !important;
 }
 .section-9-heading {
   font-size: 22px;
@@ -299,6 +323,10 @@
   justify-content: center;
   margin-bottom: 40px;
 }
+.section-11-container{
+  width: 82% !important;
+  max-width: 1560px !important;
+}
 .section-11-heading {
   margin-top: 150px;
   margin-bottom: 57px;
@@ -319,6 +347,8 @@
 }
 .section-12-container {
   padding-bottom: 66px;
+  width: 82% !important;
+  max-width: 1560px !important;
 }
 .section-12-text {
   font-weight: 700;
