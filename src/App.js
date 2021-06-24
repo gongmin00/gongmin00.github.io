@@ -7,8 +7,11 @@ import mainTitle from "./images/main-title.svg";
 import regButton from "./images/Reg-button.svg";
 import sectionOneImg from "./images/section-1-img2.png";
 import sectionTwoImg from "./images/section-2-img(1).png";
-import sectionTwoIcon from "./images/section-2-icon.png";
 // import sectionTwoIcon from "./images/section-2-icon.png";
+// import sectionTwoIcon from "./images/section-2-icon.png";
+import sectionTwoIcon1 from "./images/section-2-icon-1.svg";
+import sectionTwoIcon2 from "./images/section-2-icon-2.svg";
+import sectionTwoIcon3 from "./images/section-2-icon-3.svg";
 import sectionThreeRectangle from "./images/section-3-ret.png";
 import sectionThreeImg from "./images/section-3-img.svg";
 import sectionThreeImgIcon from "./images/section-3-img-icon.png";
@@ -151,13 +154,35 @@ const App = () => {
           </Col>
         </Row>
         <Row className="section-2-icons">
-          <Col className="section-2-icons-container">
-            <img
-              className="section-2-icons-img"
-              src={sectionTwoIcon}
-              alt="section-2-icons"
-              style={{ width: "100%" }}
-            />
+          <Col sm="4" md="4" lg="4" className="section-2-icons-container">
+            <div className="section-2-icon-text">Connected Car</div>
+            <div className="section-2-icon-img-container">
+              <img
+                className="section-2-icons-img"
+                src={sectionTwoIcon1}
+                alt="section-2-icon"
+              />
+            </div>
+          </Col>
+          <Col sm="4" md="4" lg="4" className="section-2-icons-container">
+            <div className="section-2-icon-text">AR/VR & Gaming</div>
+            <div className="section-2-icon-img-container">
+              <img
+                className="section-2-icons-img"
+                src={sectionTwoIcon2}
+                alt="section-2-icon"
+              />
+            </div>
+          </Col>
+          <Col sm="4" md="4" lg="4" className="section-2-icons-container">
+            <div className="section-2-icon-text">Robotics</div>
+            <div className="section-2-icon-img-container">
+              <img
+                className="section-2-icons-img"
+                src={sectionTwoIcon3}
+                alt="section-2-icon"
+              />
+            </div>
           </Col>
         </Row>
       </Container>
@@ -239,7 +264,7 @@ const App = () => {
       <Container className="section-4-container">
         <Row>
           <Col sm="12" md="12" lg="12">
-            <div className="section-4-heading">
+            <div id="section-4-content" className="section-4-heading">
               EVENT SCHEDULE
               <div className="section-3-rectangle">
                 <img
@@ -462,7 +487,7 @@ const App = () => {
                 Project or company must have not raised any of non-grant funding
                 from any source;
               </div>
-              <div className="section-5-text">Ticket price: $ 20.</div>
+              {/* <div className="section-5-text">Ticket price: $ 20.</div> */}
             </div>
             <div className="section-3-img-icon section-5-img-icon">
               <img
@@ -484,7 +509,7 @@ const App = () => {
                 Project or company must raised less than $1,000,000 of non-grant
                 funding from any source;
               </div>
-              <div className="section-5-text">Ticket price: $ 50.</div>
+              {/* <div className="section-5-text">Ticket price: $ 50.</div> */}
             </div>
             <div className="section-3-img-icon section-5-img-icon">
               <img
@@ -537,7 +562,7 @@ const App = () => {
               First Round:The Idea & Feasibility
             </div>
             <div className="section-6-text">
-              Participants are required to submit a do  cument explaining the
+              Participants are required to submit a do cument explaining the
               following questions as a part of their Round 1 entry: (No more
               than 10 pages)
             </div>
@@ -598,7 +623,7 @@ const App = () => {
               <img
                 src={sectionSixImg}
                 alt="section-6-img"
-                style={{ width: "70%" }}
+                style={{ width: "50%" }}
               />
             </div>
           </Col>
@@ -754,7 +779,7 @@ const App = () => {
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-10-content">
-              <div className="section-10-heading">Organizer</div>
+              <div className="section-10-heading">Organizers</div>
               <div className="section-10-title">
                 <div style={{ color: "#3FB24F", fontSize: "22px" }}>Host</div>
                 <img
@@ -778,7 +803,7 @@ const App = () => {
                   Event partner
                 </div>
                 <img
-                className="section-10-img2"
+                  className="section-10-img2"
                   src={section10Icon2}
                   alt="section-9-icon2"
                   style={{ paddingLeft: "12px" }}
@@ -874,7 +899,7 @@ const App = () => {
               <img
                 src={section11Img3}
                 alt="section-11-img"
-                style={{ width: "70%" }}
+                style={{ width: "50%" }}
               />
             </div>
 
@@ -889,26 +914,65 @@ const App = () => {
         </Row>
       </Container>
       <Container className="section-12-container" id="contact-container">
-        <div className="mobile-contact-us">Contact Us</div>
-        <Row style={{flexWrap:"unset"}}>
-          <Col sm="2" md="2" lg="2" style={{ paddingTop: "20px",width:"unset" }}>
-            <img className="bot-icon1" src={section10Icon} alt="section-9-icon" style={{width:"100%"}}/>
+        {/* <div className="mobile-contact-us">Contact Us</div> */}
+        <Row style={{ flexWrap: "unset" }}>
+          <Col
+            sm="2"
+            md="2"
+            lg="2"
+            style={{ paddingTop: "20px", width: "unset" }}
+          >
+            <img
+              className="bot-icon1"
+              src={section10Icon}
+              alt="section-9-icon"
+              style={{ width: "100%" }}
+            />
           </Col>
-          <Col sm="3" md="3" lg="3" style={{ paddingTop: "20px",width:"unset"}}>
-            <img className="bot-icon2"  src={section12Icon} alt="section-9-icon" style={{width:"100%"}}/>
+          <Col
+            sm="3"
+            md="3"
+            lg="3"
+            style={{ paddingTop: "20px", width: "unset" }}
+          >
+            <img
+              className="bot-icon2"
+              src={section12Icon}
+              alt="section-9-icon"
+              style={{ width: "100%" }}
+            />
           </Col>
-          <Col sm="2" md="2" lg="2" style={{ paddingTop: "20px",width:"unset" }}></Col>
-          <Col className="contact-us" sm="2" md="2" lg="1.5" style={{ paddingTop: "20px" }}>
-            <div className="section-12-text" style={{textAlign:"right"}}>Contact Us</div>
+          <Col
+            sm="2"
+            md="2"
+            lg="2"
+            style={{ paddingTop: "20px", width: "unset" }}
+          ></Col>
+          <Col
+            className="contact-us"
+            sm="2"
+            md="2"
+            lg="1.5"
+            style={{ paddingTop: "20px" }}
+          >
+            {/* <div className="section-12-text" style={{ textAlign: "right" }}>
+              Contact Us
+            </div> */}
           </Col>
-          <Col className="socialIcon-container" sm="5" md="5" lg="3" style={{ paddingTop: "20px", width:"100%",textAlign:"right" }}>
+          <Col
+            className="socialIcon-container"
+            sm="5"
+            md="5"
+            lg="3"
+            style={{ paddingTop: "20px", width: "100%", textAlign: "right" }}
+          >
             <a
               href="mailto:events@hackhub.com"
               target="_blank"
               rel="noreferrer"
             >
               <img
-              className="bot-social-icon1"
+                className="bot-social-icon1"
                 src={emailImg}
                 alt="social media-icon"
                 style={{
@@ -923,7 +987,7 @@ const App = () => {
                 rel="noreferrer"
               >
                 <img
-                className="bot-social-icon1"
+                  className="bot-social-icon1"
                   src={facebookImg}
                   alt="social media-icon"
                   style={{
@@ -937,7 +1001,7 @@ const App = () => {
                 rel="noreferrer"
               >
                 <img
-                className="bot-social-icon1"
+                  className="bot-social-icon1"
                   src={twitterImg}
                   alt="social media-icon"
                   style={{
@@ -951,7 +1015,7 @@ const App = () => {
                 rel="noreferrer"
               >
                 <img
-                className="bot-social-icon1"
+                  className="bot-social-icon1"
                   src={instImg}
                   alt="social media-icon"
                   style={{

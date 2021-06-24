@@ -14,21 +14,25 @@ const sideDrawer = props => {
       <Router>
       <ul>
         <li>
-          <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer">SCHEDULE</a>
+        <HashLink smooth to="/#section-4-content">
+          {/* <a href="/" target="_blank" rel="noreferrer">SCHEDULE</a> */}
+          <div>SCHEDULE</div>
+        </HashLink>
         </li>
         {/* <li>
           <a href="/">SPONSORS</a>
         </li> */}
         <li>
         <HashLink smooth to="/#contact-container">
-          <a href="/">CONTACT</a>
+          {/* <a href="/">CONTACT</a> */}
+          <div>CONTACT</div>
           </HashLink>
         </li>
-        <li >
+        {/* <li >
                   <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
-                  Terms & Conditions
+                  TERMS & CONDITIONS
                   </a>
-                </li>
+                </li> */}
       </ul>
       </Router>
     </nav>

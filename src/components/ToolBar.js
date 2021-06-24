@@ -13,9 +13,7 @@ const Toolbar = (props) => (
           <div />
           {/*     
         <Col sm='3'> */}
-          <div className="toggle-btn">
-            <SideMenu click={props.drawerToggleClickHandler} />
-          </div>
+
           {/* </Col> */}
           <Col sm="9" md="5" lg="6" style={{ width: "100%" }}>
             <div className="toolbar_logo">
@@ -25,31 +23,39 @@ const Toolbar = (props) => (
             </div>
             <div className="spacer" />
           </Col>
-          <Col md="7" lg="6" style={{ width: "58%" }}>
+          <Col md="6" lg="6" style={{ width: "58%" }}>
             <Router>
-            <div className="toolbar_navigation-items">
-              <ul>
-                <li>
-                  <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer">
-                    SCHEDULE
-                  </a>
-                </li>
-                {/* <li>
+              <div className="toolbar_navigation-items">
+                <ul>
+                  <li>
+                    <HashLink smooth to="/#section-4-content">
+                      {/* <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer"> */}
+                      <div>SCHEDULE</div>
+                      {/* </a> */}
+                    </HashLink>
+                  </li>
+
+                  {/* <li>
             <a href="/user">SPONSORS</a>
             </li> */}
-                <li>
-                  <HashLink smooth to="/#contact-container">
-                    <a href="/music">CONTACT</a>
-                  </HashLink>
-                </li>
-                <li style={{minWidth:"230px"}}>
+                  <li>
+                    <HashLink smooth to="/#contact-container">
+                      <div>CONTACT</div>
+                    </HashLink>
+                  </li>
+                  {/* <li style={{minWidth:"230px"}}>
                   <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
-                  Terms & Conditions
+                  TERMS & CONDITIONS
                   </a>
-                </li>
-              </ul>
-            </div>
+                </li> */}
+                </ul>
+              </div>
             </Router>
+          </Col>
+          <Col md="1" lg="0">
+            <div className="toggle-btn">
+              <SideMenu click={props.drawerToggleClickHandler} />
+            </div>
           </Col>
         </nav>
       </header>
