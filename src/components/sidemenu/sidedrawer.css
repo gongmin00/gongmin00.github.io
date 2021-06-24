@@ -1,17 +1,23 @@
-* {
-    font-family: FZLanTingKanHei-R-Consolas;
+@font-face {
+  font-family: "Futura";
+  src: url(../../font/FuturaMediumBT.ttf);
 }
+* {
+    /* font-family: FZLanTingKanHei-R-Consolas; */
+    font-family: Futura;
+}
+
 .side-drawer {
     height: 33%;
-    background: white;
+    background: #211E1F;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 70%;
     max-width: 400px;
     z-index: 200;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease-out;
   }
   
@@ -31,15 +37,22 @@
     margin: 0.5rem 0;
   }
   
-  .side-drawer a {
+  .side-drawer div {
     text-decoration: none;
-    color: #521751;
+    color: #FFFFFF;
     font-size: 1.2rem;
+    line-height: 32px;
   }
   
+  .side-drawer div:hover,
+  .side-drawer div:active {
+    color: #23EDE8;
+    text-decoration: none !important;
+  }
   .side-drawer a:hover,
   .side-drawer a:active {
-    color: #fa923f;
+    color: #23EDE8;
+    text-decoration: none !important;
   }
   
   @media screen and (min-width: 991px) {

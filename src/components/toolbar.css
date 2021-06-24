@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Futura";
+  src: url(../font/FuturaMediumBT.ttf);
+}
 * {
-  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Inconsolata', monospace; */
+  font-family: Futura;
 }
 .toolbar {
     /* position: fixed; */
@@ -37,30 +42,44 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
   }
   
   .toolbar_navigation-items li {
     padding-left:47px;
   }
   
-  .toolbar_navigation-items a {
+  .toolbar_navigation-items li {
     text-decoration: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
     color: #FFFFFF;
   }
-  
+  /* .toolbar_navigation-items li :hover{
+    color:#23EDE8;
+    text-decoration: none;
+  }
+   */
+  .toolbar_navigation-items div:hover,
+  .toolbar_navigation-items div:active {
+    color:#23EDE8;
+    text-decoration: none !important;
+  }
   .toolbar_navigation-items a:hover,
   .toolbar_navigation-items a:active {
-    color: rgb(223, 75, 30);
+    color:#23EDE8;
+    text-decoration: none !important;
   }
-  
   @media screen and (max-width: 991px) {
     .toolbar_navigation-items {
       display: none;
+    }
+    .toggle-btn {
+      display: flex;
+      justify-content: flex-end;
     }
   }
   
