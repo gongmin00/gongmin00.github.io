@@ -3,7 +3,7 @@ import NavBar from "./components/navBar";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import mainTitle from "./images/main-title.svg";
+// import mainTitle from "./images/main-title.svg";
 import regButton from "./images/Reg-button.svg";
 import sectionOneImg from "./images/section-1-img2.png";
 import sectionTwoImg from "./images/section-2-img(1).png";
@@ -226,7 +226,7 @@ const App = () => {
                 <img
                   src={sectionThreeImg}
                   alt="section-3-img"
-                  style={{ width: "70%" }}
+                  style={{ width: "70%",height:"70%" }}
                 />
               </div>
             </Col>
@@ -246,7 +246,7 @@ const App = () => {
                 <img
                   src={sectionThreeImg2}
                   alt="section-3-img2"
-                  style={{ width: "70%" }}
+                  style={{ width: "70%",height:"70%" }}
                 />
               </div>
             </Col>
@@ -277,7 +277,7 @@ const App = () => {
           <Col sm="12" md="12" lg="12">
             <div id="section-4-content" className="section-4-heading">
               EVENT SCHEDULE
-              <div className="section-3-rectangle">
+              <div className="section-4-rectangle">
                 <img
                   src={sectionThreeRectangle}
                   alt="section-3-rectangle"
@@ -325,7 +325,7 @@ const App = () => {
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
               PARTICIPANT ELIGIBILITY
-              <div className="section-4-rectangle">
+              <div className="section-5-rectangle">
                 <img
                   src={sectionThreeRectangle}
                   alt="section-3-rectangle"
@@ -535,7 +535,7 @@ const App = () => {
         </Row>
         <Row>
           <Col sm="12" md="12" lg="12">
-            <div className="section-4-img2-container">
+            <div className="section-4-img2-container" style={{display:"flex", justifyContent:"cent"}}>
               <img
                 src={sectionFourImg2}
                 alt="section-3-rectangle"
@@ -555,7 +555,7 @@ const App = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={{ width: "82%", maxWidth: "1560px" }}>
+      <Container style={{ width: "95%", maxWidth: "1560px" }}>
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
@@ -634,7 +634,7 @@ const App = () => {
               <img
                 src={sectionSixImg}
                 alt="section-6-img"
-                style={{ width: "50%" }}
+                style={{ width: "60%", height:"60%" }}
               />
             </div>
           </Col>
@@ -910,7 +910,7 @@ const App = () => {
               <img
                 src={section11Img3}
                 alt="section-11-img"
-                style={{ width: "50%" }}
+                style={{ width: "60%", height:"60%" }}
               />
             </div>
 

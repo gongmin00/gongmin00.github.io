@@ -250,6 +250,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top:15px;
 }
 .section-4-timer {
   margin: 155px auto 0 auto;
@@ -507,9 +508,13 @@
 }
 @media (max-width: 768px) {
   *{
-    font-size:10px !important;
-    line-height: 18px !important;
+    font-size:14px !important;
+    line-height: 20px !important;
   }
+  
+  .section-1-content, .section-2-content, .section-3-content, .section-4-container, .section-5-container, .section-9-container, .section-10-container, .section-11-container, .section-12-container{
+    width:95% !important;
+  }     
   .main-container {
     background: #231f20;
     background-image: url(./images/mobile-bg.png) !important;
@@ -525,7 +530,7 @@
     width: 100%;
   }
   .main-title1 {
-    font-size: 20px!important;
+    font-size: 18px!important;
     line-height: 32px !important;
     font-weight: 700;
   } 
@@ -556,6 +561,7 @@
   }
   .section-2-img{
     width: 55% !important;
+    height: 55%;
   }
   .section-2-heading{
     justify-content: center;
@@ -583,15 +589,19 @@
     max-width: 51.15px;
     margin-top:0;
   }
+  .section-2-icon-text{
+    font-size: 10px !important;
+  }
   .section-3-rectangle{
     margin:0 auto !important;
   }
   .section-3-rectangle > img {
     width: 100%;
-    max-width: 150px !important;
+    max-width: 220px !important;
+    max-height: 5px;
   }
   .section-3-heading{
-    font-size: 16px !important;
+    font-size: 1.6rem !important;
     line-height: 32px !important;
   }
   .section-3-content{
@@ -606,7 +616,7 @@
   .section-3-img-icon{
     margin-top:4rem;
     font-size: 10px !important;
-    line-height: 18px !important;
+    line-height: 20px !important;
   }
   .section-3-icon{
     width: 12%;
@@ -616,7 +626,7 @@
   }
   .section-3-subheading-item{
     font-size: 1rem !important;
-    line-height: 16px !important;
+    line-height: 20px !important;
   }
   .section-4-heading{
     margin-top:4rem !important;
@@ -648,8 +658,12 @@
     margin-top:5.87rem;
     font-size:1.6rem !important;
   }
+  .section-4-rectangle{
+    margin-top:0;
+  }
   .section-4-rectangle >img{
-    max-width: 21.5rem !important;
+    max-width: 14.5rem !important;
+    max-height: 6px;
     margin-top:1rem;
   }
   .section-5-container{
@@ -659,21 +673,26 @@
   .section-5-icon{
     width: 2.3rem;
   }
+  .section-5-rectangle >img{
+    max-width: 20.5rem !important;
+    max-height: 9px;
+    margin-top:1rem;
+  }
   .section-5-icon-text-container{
     margin-top:1rem !important;
   }
   .section-5-cards{
-    margin-top:3.9rem !important;
+    margin-top:0rem !important;
   }
   .section-5-text{
-    font-size: 0.6rem !important;
+    font-size: 1rem !important;
     margin-bottom: 1rem;
-    line-height: 10px !important;
+    line-height: 16px !important;
   }
   .section-5-text-container{
     padding: 1.8rem 1.4rem !important;
     border-radius: 1.2rem;
-    min-height: 15rem;
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -681,14 +700,14 @@
   .section-5-text-container2{
     padding: 1.8rem 1.6rem !important;
     border-radius: 1.2rem;
-    min-height: 15rem;
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .section-5-icon-img{
     padding-right: 1rem;
-    max-width: 4.36rem;
+    max-width: 3.36rem;
   }
   .section-5-cards-item1{
     padding-right:1rem !important;
@@ -698,23 +717,29 @@
   }
   .section-4-img2-container{
     margin:4rem auto 0 auto;
+    justify-content: center;
+  }
+  .section-4-img2-container>img{
+    width: 70% !important;
+    height: 70%;
+
   }
   .section-5-btn-container{
     margin:3rem auto;
   }
   .section-6-rectangle > img{
-    max-width: 95px !important;
+    max-width: 120px !important;
     width: 100%;
   }
   .section-6-subtitle{
     margin-top:19px;
     margin-bottom: 7px;
     font-size: 1rem !important;
-    line-height: 16px !important;
+    line-height: 20px !important;
   }
   .section-6-text{
-    font-size: 0.9rem !important;
-    line-height: 1.2rem !important;
+    /* font-size: 1rem !important; */
+    line-height: 1.8rem !important;
   }
   .section-6-subtitle2{
     margin-top:17px;
@@ -736,7 +761,7 @@
   }
   .section-9-title{
     font-size: 1rem !important;
-    line-height: 16px !important;
+    line-height: 20px !important;
     margin-bottom: 0.6rem;
   }
   .section-9-text-container{
@@ -759,9 +784,15 @@
   .section-10-title{
     margin-bottom: 16px;
   }
+  .section-10-title > div{
+    margin-top: 3px;
+  }
   .section-10-title2{
     margin-top:23px;
     margin-bottom: 16px;
+  }
+  .section-10-title2 > div{
+    margin-top: 3px;
   }
   .section-11-img-container{
     margin-top:52px;
@@ -770,12 +801,12 @@
   .section-11-btn-container{
     margin-bottom: 69px;
   }
-  .bot-icon1{
+  /* .bot-icon1{
     max-width: 44px;
   }
   .bot-icon2{
     max-width: 84px;
-  }
+  } */
   .bot-social-icon1{
     padding-left: 10px !important;
     max-width: 22px;
