@@ -18,7 +18,6 @@ export default class Timer extends React.Component {
 //   }
   componentDidMount(){
       this.calculateCountdown()
-
   }
 //   onEndDateChange = endDate => {
 //     this.setState({ endDate });
