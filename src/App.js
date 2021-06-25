@@ -17,7 +17,7 @@ import sectionThreeImg from "./images/section-3-img.svg";
 import sectionThreeImgIcon from "./images/section-3-img-icon.png";
 import sectionThreeImg2 from "./images/section-3-img2.svg";
 import sectionThreeImg2Icon from "./images/section-3-img2-icon.png";
-import sectionFourBtn from "./images/section-4-btn.png";
+// import sectionFourBtn from "./images/section-4-btn.png";
 import sectionFourImg from "./images/section-4-img.png";
 import sectionFourImg2 from "./images/section-4-img2.png";
 import sectionFiveIcon from "./images/section-5-icon.png";
@@ -49,12 +49,23 @@ const App = () => {
             <Col sm="12" md="12" lg="7" xl="8">
               <div>
                 <div className="section-1-title">
-                  <img
+                  {/* <img
                     className="main-title"
                     src={mainTitle}
                     alt="main title"
                     style={{ width: "100%" }}
-                  />
+                  /> */}
+                  <div className="section-1-maintitle-container">
+                    <div className="main-title1">The</div>
+                    <div className="main-title2">
+                      <div className="main-title2-item1">OPPO</div>
+                      <div className="main-title2-item2">Hack</div>
+                    </div>
+                    <div className="main-title1">
+                      Global Innovation Competition
+                    </div>
+                    <div className="main-title1">is finally here!</div>
+                  </div>
                   <img
                     className="mobile-section-1-img"
                     src={sectionOneImg}
@@ -202,13 +213,6 @@ const App = () => {
           </Row>
           <Row>
             <Col sm="12" md="12" lg="12">
-              <div className="section-3-img">
-                <img
-                  src={sectionThreeImg}
-                  alt="section-3-img"
-                  style={{ width: "70%" }}
-                />
-              </div>
               <div className="section-3-img-icon">
                 <img
                   className="section-3-icon"
@@ -218,17 +222,17 @@ const App = () => {
                 />
                 Seeding Group
               </div>
+              <div className="section-3-img">
+                <img
+                  src={sectionThreeImg}
+                  alt="section-3-img"
+                  style={{ width: "70%" }}
+                />
+              </div>
             </Col>
           </Row>
           <Row>
             <Col sm="12" md="12" lg="12">
-              <div className="section-3-img">
-                <img
-                  src={sectionThreeImg2}
-                  alt="section-3-img2"
-                  style={{ width: "70%" }}
-                />
-              </div>
               <div className="section-3-img-icon">
                 <img
                   className="section-3-icon"
@@ -237,6 +241,13 @@ const App = () => {
                   style={{ paddingRight: "20px" }}
                 />
                 Growing Group
+              </div>
+              <div className="section-3-img">
+                <img
+                  src={sectionThreeImg2}
+                  alt="section-3-img2"
+                  style={{ width: "70%" }}
+                />
               </div>
             </Col>
           </Row>
@@ -291,7 +302,7 @@ const App = () => {
             <div className="section-4-heading2">Final Event Date</div>
             <div className="section-4-subtitle2">Saturday August 14, 2021</div>
             <div className="section-4-subtitle2">Sunday August 15, 2021</div>
-            <div className="section-4-btn">
+            {/* <div className="section-4-btn">
               <a href="https://event.hackhub.com/event/oppohack2021">
                 <img
                   className="section-4-btn-img"
@@ -300,7 +311,7 @@ const App = () => {
                   alt="section-4-btn"
                 />
               </a>
-            </div>
+            </div> */}
             <div className="section-4-img">
               <img
                 src={sectionFourImg}
@@ -479,6 +490,15 @@ const App = () => {
           style={{ marginTop: "134px", justifyContent: "center" }}
         >
           <Col className="section-5-cards-item1" sm="6" md="5" lg="5">
+            <div className="section-3-img-icon section-5-img-icon">
+              <img
+                className="section-5-icon-img"
+                src={sectionThreeImgIcon}
+                alt="section-3-img-icon"
+                style={{ paddingRight: "20px" }}
+              />
+              Seeding Group
+            </div>
             <div className="section-5-text-container">
               <div className="section-5-text">
                 Project should have been around for less than 24 month;
@@ -489,18 +509,18 @@ const App = () => {
               </div>
               {/* <div className="section-5-text">Ticket price: $ 20.</div> */}
             </div>
-            <div className="section-3-img-icon section-5-img-icon">
-              <img
-                className="section-5-icon-img"
-                src={sectionThreeImgIcon}
-                alt="section-3-img-icon"
-                style={{ paddingRight: "20px" }}
-              />
-              Seeding Group
-            </div>
           </Col>
           {/* <Col md="0" lg="1"></Col> */}
           <Col className="section-5-cards-item2" sm="6" md="5" lg="5">
+            <div className="section-3-img-icon section-5-img-icon">
+              <img
+                className="section-5-icon-img"
+                src={sectionThreeImg2Icon}
+                alt="section-3-img2-icon"
+                style={{ paddingRight: "20px" }}
+              />
+              Growing Group
+            </div>
             <div className="section-5-text-container2">
               <div className="section-5-text">
                 Project should have been around for less than 5 years;
@@ -510,15 +530,6 @@ const App = () => {
                 funding from any source;
               </div>
               {/* <div className="section-5-text">Ticket price: $ 50.</div> */}
-            </div>
-            <div className="section-3-img-icon section-5-img-icon">
-              <img
-                className="section-5-icon-img"
-                src={sectionThreeImg2Icon}
-                alt="section-3-img2-icon"
-                style={{ paddingRight: "20px" }}
-              />
-              Growing Group
             </div>
           </Col>
         </Row>
