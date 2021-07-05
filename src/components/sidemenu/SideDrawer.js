@@ -28,11 +28,11 @@ const sideDrawer = props => {
           <div>CONTACT</div>
           </HashLink>
         </li>
-        {/* <li >
+        <li >
                   <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
-                  TERMS & CONDITIONS
+                  <div>TERMS OF SERVICE</div>
                   </a>
-                </li> */}
+                </li>
       </ul>
       </Router>
     </nav>

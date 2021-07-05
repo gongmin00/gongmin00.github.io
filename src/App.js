@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "./components/navBar";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import mainTitle from "./images/main-title.svg";
 import regButton from "./images/Reg-button.svg";
@@ -36,8 +35,10 @@ import facebookImg from "./images/facebook 1.svg";
 import twitterImg from "./images/twitter 1.svg";
 import instImg from "./images/inst 1.svg";
 import MetaInfo from "./components/MetaInfo";
-
+import { BrowserRouter as Router,  } from "react-router-dom";
 const App = () => {
+  
+
   return (
     <div className="main-container">
       <MetaInfo />
@@ -1040,5 +1041,6 @@ const App = () => {
       </Container>
     </div>
   );
+
 };
 export default App;
