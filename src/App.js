@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/footer";
 import MetaInfo from "./components/MetaInfo";
 import MainContent from "./mainContent";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Terms from "./components/terms"
 const App = () => {
   // function checkLocation(){
@@ -17,11 +17,11 @@ const App = () => {
     <div className="main-container">
       <MetaInfo />
       <NavBar />
-      
+
       <Router>
         <Switch>
-        <Route exact path="/"><MainContent /></Route>
-        <Route path="/terms"><Terms/></Route>
+          <Route exact path="/"><MainContent /></Route>
+          <Route path="/terms"><Terms /></Route>
         </Switch>
       </Router>
       <Footer />
