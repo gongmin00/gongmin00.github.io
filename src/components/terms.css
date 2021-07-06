@@ -1,0 +1,47 @@
+/* .react-pdf__Document{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+*{
+    font-family: Futura;
+    color: #ffffff;
+    line-height: 32px;
+    font-weight: 400px;
+    font-size: 20px;
+  }
+  @font-face {
+    font-family: "Futura";
+    src: url(../font/FuturaMediumBT.ttf);
+  }
+.page-container{
+    text-align: center;
+    margin-top:20px;
+}
+.react-pdf__Page{
+    display: flex;
+    justify-content: center;
+}
+.react-pdf__Page__textContent{
+    display: none;
+}
+.page-btn{
+    background-color: #73E4E1;
+    border:#73E4E1;
+    margin: 20px;
+    border-radius: 5px;
+    min-width: 73px;
+}
+@media (max-width:768px) {
+    /* .react-pdf__Page__canvas{
+        display:none !important;
+    }
+    .react-pdf__Page__textContent{
+        display: unset ;
+        position:unset;
+    } */
+    *{
+        font-size:14px !important;
+        line-height: 20px !important;
+      }
+}
