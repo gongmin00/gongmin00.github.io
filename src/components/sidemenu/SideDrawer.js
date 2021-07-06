@@ -1,7 +1,7 @@
 import React from "react";
 import "./sidedrawer.css";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const sideDrawer = props => {
   let drawerClasses = ["side-drawer"];
@@ -29,9 +29,12 @@ const sideDrawer = props => {
           </HashLink>
         </li>
         <li >
-                  <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
+                  {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
                   <div>TERMS OF SERVICE</div>
-                  </a>
+                  </a> */}
+                   <Link to="/terms" target="_blank" rel="noreferrer">
+                        <div>TERMS OF SERVICE</div>
+                      </Link>
                 </li>
       </ul>
       </Router>

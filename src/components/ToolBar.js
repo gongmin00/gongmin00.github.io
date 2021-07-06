@@ -4,7 +4,7 @@ import logo from "../images/nav-logo.png";
 import "./toolbar.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, } from "react-router-dom";
+import { BrowserRouter as Router, Link} from "react-router-dom";
 
 
 
@@ -52,11 +52,11 @@ const Toolbar = (props) => {
                       </HashLink>
                     </li>
                     <li style={{ minWidth: "230px" }}>
-                      {/* <Route path="/terms" component={Terms} />
-                      <Link to="/terms">
+                     
+                      <Link to="/terms" target="_blank" rel="noreferrer">
                         <div>TERMS OF SERVICE</div>
-                      </Link> */}
-                      <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer"><div>TERMS OF SERVICE</div></a>
+                      </Link>
+                      {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer"><div>TERMS OF SERVICE</div></a> */}
  
                     </li>
                   </ul>
