@@ -4,9 +4,7 @@ import logo from "../images/nav-logo.png";
 import "./toolbar.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, Link} from "react-router-dom";
-
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Toolbar = (props) => {
   // let history = useHistory()
@@ -52,12 +50,15 @@ const Toolbar = (props) => {
                       </HashLink>
                     </li>
                     <li style={{ minWidth: "230px" }}>
-                     
                       <Link to="/terms" target="_blank" rel="noreferrer">
                         <div>TERMS OF SERVICE</div>
                       </Link>
                       {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer"><div>TERMS OF SERVICE</div></a> */}
- 
+                    </li>
+                    <li>
+                      <Link to="/privacy" target="_blank" rel="noreferrer">
+                        <div style={{minWidth:"160px"}}>PRIVACY POLICY</div>
+                      </Link>
                     </li>
                   </ul>
                 </div>

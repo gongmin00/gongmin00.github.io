@@ -244,7 +244,7 @@
   text-align: center;
   margin-top: 107px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 50px !important;
 }
 .section-4-rectangle{
   display: flex;

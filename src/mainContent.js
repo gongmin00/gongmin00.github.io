@@ -20,7 +20,6 @@ import sectionFourImg from "./images/section-4-img.png";
 import sectionFourImg2 from "./images/section-4-img2.png";
 import sectionFiveIcon from "./images/section-5-icon.png";
 import Timer from "./components/countdown timer/timer";
-import sectionSixImg from "./images/section-6-img.png";
 // import section7Img from "./images/section-7-avatar.png";
 // import section8Img from "./images/section-8-img.png";
 import section10Icon from "./images/section-10-icon.svg";
@@ -28,8 +27,7 @@ import section10Icon2 from "./images/section-10-icon2.svg";
 // import section11Img from "./images/sponsor-1.png";
 // import section11Img2 from "./images/sponsor-2.png";
 import section11Img3 from "./images/section-11-img.png";
-
-
+import Judging from "./components/judging";
 const MainContent = () => {
   // function checkLocation(){
   //   let location = useLocation()
@@ -69,9 +67,9 @@ const MainContent = () => {
                     style={{ width: "45%" }}
                   />
                   <div className="section-1-paragraph">
-                    A hackathon is a sprint-like event in which computer
+                    A hackathon is a design sprint-like event in which computer
                     programmers, designers, project managers, domain experts,
-                    and others collaborate intensively on software projects.
+                    and others collaborate intensively on software projects. The
                     OPPOHack Global Innovation Competition aims to build an
                     international platform for entrepreneurship and
                     next-generation innovation.
@@ -146,17 +144,16 @@ const MainContent = () => {
               </div>
             </div>
             <div className="section-2-paragraph">
-              With interactive workshops, networking activities, a bounty of
-              prizes, and previous investment opportunities, OPPOHack Global
-              Innovation Competition is ready to welcome hackers, designers,
-              engineers, and tech enthusiasts to our international event of the
-              year.
+              With interactive workshops, networking events, a bounty of prizes,
+              and investment opportunities, OPPOHack welcomes the participation
+              of hackers, designers, engineers, and tech enthusiasts from around
+              the world.
             </div>
             <div className="section-2-paragraph">
               This year, the competition revolves around the concept of
-              “Sensation and Perception” along with three sub-themes of
-              Connected Car System, Immersive Experience (AR/VR & Gaming), and
-              Robotics.
+              “Sensation and Perception” and Four sub-themes: Connected Car
+              System, Immersive Experience (AR/VR & Gaming), Robotics & Ai, and
+              Mobile Application.
             </div>
           </Col>
         </Row>
@@ -320,7 +317,7 @@ const MainContent = () => {
         <Row>
           <Col sm="12" md="12" lg="12">
             <div className="section-4-heading3">
-              PARTICIPANT ELIGIBILITY
+              PARTICIPANT AND PROJECTELIGIBILITY
               <div className="section-5-rectangle">
                 <img
                   src={sectionThreeRectangle}
@@ -372,13 +369,163 @@ const MainContent = () => {
               />
             </div>
           </Col>
-          <Col xs="10" sm="10" md="10" lg="10">
-            <div className="section-5-icon-text">
-              It is an innovative product or Service involving new Technology
+          <Col Col xs="10" sm="10" md="10" lg="10">
+            <div div className="section-5-icon-text">
+              The project is one of the following:
             </div>
           </Col>
         </Row>
         <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              An innovative product or service involving new technology
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              A hybrid of existing technologies that represents new intellectual
+              property
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              The utilization of existing technologies to create new products or
+              services or to improve existing ones
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              A technological advance that enables the development of new and
+              enhanced production processes
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              The early-stage development of a new technology
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              The project does not need to be an existing company
+            </div>
+          </Col>
+        </Row>
+        <Row
+          className="section-5-icon-text-container"
+          style={{ marginTop: "22px", flexWrap: "unset" }}
+        >
+          <Col xs="1" sm="1" md="1" lg="1"></Col>
+          <Col xs="2" sm="2" md="2" lg="2">
+            <div className="section-5-img-container">
+              <img
+                className="section-5-icon"
+                src={sectionFiveIcon}
+                alt="section-5-icon"
+                // style={{ textAlign:"right" }}
+              />
+            </div>
+          </Col>
+          <Col xs="9" sm="9" md="9" lg="9">
+            <div className="section-5-icon-text">
+              All project materials should be in English
+            </div>
+          </Col>
+        </Row>
+        {/* <Row
           className="section-5-icon-text-container"
           style={{ marginTop: "22px" }}
         >
@@ -480,7 +627,7 @@ const MainContent = () => {
               No need to be incorporated, everything should be in English
             </div>
           </Col>
-        </Row>
+        </Row> */}
         <Row
           className="section-5-cards"
           style={{ marginTop: "134px", justifyContent: "center" }}
@@ -497,11 +644,11 @@ const MainContent = () => {
             </div>
             <div className="section-5-text-container">
               <div className="section-5-text">
-                Project should have been around for less than 24 month;
+                Project should be under 24 months old.
               </div>
               <div className="section-5-text">
-                Project or company must have not raised any of non-grant funding
-                from any source;
+                Project or company has not received non-grant funding from any
+                source.
               </div>
               {/* <div className="section-5-text">Ticket price: $ 20.</div> */}
             </div>
@@ -519,11 +666,11 @@ const MainContent = () => {
             </div>
             <div className="section-5-text-container2">
               <div className="section-5-text">
-                Project should have been around for less than 5 years;
+                Project should be under 5 years old.
               </div>
               <div className="section-5-text">
-                Project or company must raised less than $1,000,000 of non-grant
-                funding from any source;
+                Project or company has not received more than $1,000,000
+                non-grant funding from any source.
               </div>
               {/* <div className="section-5-text">Ticket price: $ 50.</div> */}
             </div>
@@ -554,91 +701,7 @@ const MainContent = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={{ width: "95%", maxWidth: "1560px" }}>
-        <Row>
-          <Col sm="12" md="12" lg="12">
-            <div className="section-4-heading3">
-              JUDGING
-              <div className="section-6-rectangle">
-                <img
-                  className=""
-                  src={sectionThreeRectangle}
-                  alt="section-3-rectangle"
-                  style={{ maxWidth: "500px" }}
-                />
-              </div>
-            </div>
-            <div className="section-6-subtitle">
-              First Round:The Idea & Feasibility
-            </div>
-            <div className="section-6-text">
-              Participants are required to submit a do cument explaining the
-              following questions as a part of their Round 1 entry: (No more
-              than 10 pages)
-            </div>
-            <div className="section-6-text">
-              1. Describe how the Participant meets the eligibility
-              requirements; <br></br>
-              2. Description of the product or service; (maximum 100 words);{" "}
-              <br></br>
-              3. Please describe how the idea was born, without disclosing
-              proprietary information (maximum 100 words); <br></br>
-              4. Please describe the business model – how will the company make
-              money? (maximum 100 words) (opt if R&D) <br></br>
-              5. Market. Who is your customer? Describe your value proposition:
-              the quantifiable benefits your customers will receive in exchange
-              for purchasing your products or services. What is the buying
-              process and why will they buy it? Analyze the market in terms of
-              size, segmentation, large vendors, growth, trends, and regulations
-              (if applicable). <br></br>
-              6. Distribution. Describe from a sales and marketing perspective
-              how you will take your product to market and reach your customers.
-              In what ways are you planning to form alliances? How will you
-              overcome barriers to entry into the market? Provide a description
-              of the value chain of your industry. <br></br>
-              7. Competition. Who are your competitors now or in the future?
-              Describe your company and product's main competitive advantages.
-              If applicable, how will your IP strategy result in sustainable
-              competitive advantage? What makes you unique and better? How does
-              your competition threaten you? How might competitors react to the
-              introduction of your product or service? Include a competitive
-              matrix. How will you overcome non-adoption?
-              <br></br>
-              8. Financial. Describe your business model for revenue generation.
-              Use a bottom-up financial model to predict sales. What have you
-              spent to date? What funds have been raised? How much money do you
-              need and when do you need it? How will you raise any additional
-              funds required for your product/service? When will your venture
-              become cash-flow positive? What significant assumptions have you
-              made and what risks have you identified? <br></br>
-            </div>
-            <div className="section-6-subtitle">Final Round: Venture Plan</div>
-            <div className="section-6-text">
-              Up to 10 finalists will present their business idea to the Judges
-              on Zoom.
-            </div>
-            <div className="section-6-subtitle2">
-              Final Round Pitch Requirements
-            </div>
-            <div className="section-6-text">
-              Pitch must be In English Participants may use PowerPoint or other
-              graphic displays to support their oral presentation. Each
-              Participant will be given 10-minutes to present their venture
-              plan, followed by a 10-minute question-and-answer session between
-              the Participant and the Judges.
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12">
-            <div className="section-6-img-container">
-              <img
-                src={sectionSixImg}
-                alt="section-6-img"
-                style={{ width: "60%", height: "60%" }}
-              />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Judging />
       {/* <Container className="section-7-container">
         <Row>
           <Col sm="12" md="12" lg="12">
@@ -740,40 +803,39 @@ const MainContent = () => {
               <div className="section-9-title">Who can participate?</div>
               <div className="section-9-text">
                 OPPOHack welcomes those who are interested in technology and
-                innovation and have an interesting project or idea within the
-                scope of the challenges proposed. You can compete as an
-                individual or as a group.
+                innovation and have an interesting project or idea that fits the
+                eligibility requirements. You can compete as an individual or as
+                a group.
               </div>
             </div>
             <div className="section-9-text-container">
               <div className="section-9-title section-9-title-spec">
-                When and how will I know if I am qualified for the final round?
+                How to become a sponsor?
               </div>
               <div className="section-9-text">
-                OPPOHack welcomes those who are interested in technology and
-                innovation and have an interesting project or idea within the
-                scope of the challenges proposed. You can compete as an
-                individual or as a group.
+                Due to the large amount of registrations received, the
+                preliminary screening will take place from June 1, 2021 to
+                August 1, 2021. Finalists will receive a confirmation email from
+                OPPOHack, inviting them to join the final virtual roadshow
               </div>
             </div>
           </Col>
           <Col sm="12" md="12" lg="6">
             <div className="section-9-text-container">
               <div className="section-9-title">
-                Which group should I compete in ?
+                Should I compete in the Seeding Group or the Growing Group?
               </div>
               <div className="section-9-text">
-                Upon registration you will need to select one of the two groups
-                that you wish to compete in. Join the Seeding Group if your
-                project/idea is in a relatively early creative stage ( Eg. no
-                prototype or no MVP has been established yet). Join the Growing
-                Group if your project already possesses a MVP/Prototype or it is
-                in the incubation and acceleration stage. Note that the judging
-                criteria is different for each group. Contact us if you are not
-                sure about which one is more appropriate for you.
+                Upon registration, you will need to choose whether you wish to
+                compete in the Seeding Group or the Growing Group. Register for
+                the Seeding Group if your project/idea is at a relatively early
+                stage in the creative process (e.g., Your project is under 24
+                months old). Register for the Growing Group if your project is
+                over 24 months old or has raised some funds. Contact us if you
+                are not sure which group you should register for.
               </div>
             </div>
-            <div className="section-9-text-container">
+            {/* <div className="section-9-text-container">
               <div className="section-9-title">How to become a sponsor?</div>
               <div className="section-9-text">
                 Due to the large amount of registrations received, the
@@ -781,7 +843,7 @@ const MainContent = () => {
                 August 1st, 2021. Finalists will receive a confirmation email
                 from OPPOHack, inviting them to join the final virtual roadshow.
               </div>
-            </div>
+            </div> */}
           </Col>
         </Row>
       </Container>
@@ -805,8 +867,8 @@ const MainContent = () => {
                 Our business covers 40+ countries and regions in 6 continents,
                 with 40,000+ employees, 80+ top operator partners, and 400,000+
                 retail outlets around the world. OPPO is aiming to leap into the
-                future, and rigorously build loT ecosystem to become a leader in
-                a fully connected intelligent world.
+                future, and rigorously build an loT ecosystem, and to become a
+                leader in a fully connected intelligent world.
               </div>
               <div className="section-10-title2">
                 <div style={{ color: "#73E4E1", fontSize: "22px" }}>
@@ -822,12 +884,10 @@ const MainContent = () => {
               <div className="section-9-text">
                 HackHub is a cloud-base smart competition platform founded by a
                 team of hackathon enthusiasts from North America. Since 2016, it
-                has hosted competitions from around the world based on themes of
-                education, finance, medical care, artificial intelligence,
-                blockchain etc. It has successfully gathered world-class
-                innovators, designers and outstanding programmers from around
-                the globe. Today, HackHub has assisted hundreds of competitions
-                from home and abroad.
+                has hosted hundreds of competitions around the world based on
+                themes of education, finance, medical care, artificial
+                intelligence, and blockchain, gathering world-class innovators,
+                designers, and programmers.
               </div>
             </div>
           </Col>
