@@ -96,13 +96,14 @@ const MainContent = () => {
                       <div className="main-title2-item1">Web Developer </div>
                       <div className="main-title2-item2">&</div>
                       <div className="main-title2-item3">Bio-hacker</div>
-                      <div
+                      
+                    </Row>
+                    <div
                         className="section-1-paragraph"
                         style={{ marginTop: "20px", textAlign: "center" }}
                       >
                         I write clean code and love to learn new technique
                       </div>
-                    </Row>
                     <div className="main-title1">
                       <img
                         src={ProfileImg}
