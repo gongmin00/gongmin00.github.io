@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import SideMenu from "../components/sidemenu/SideMenu";
-import logo from "../images/nav-logo.png";
+import logo from "../images/favicon_img.png";
 import "./toolbar.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { Alert, Button } from "react-bootstrap";
 const Toolbar = (props) => {
-  // let history = useHistory()
-  // const handleTermClick =()=>{
-  //   history.push("/terms")
-  // }
+  const [show, setShow] = useState(false);
   return (
     <Container>
       <Row>
@@ -34,31 +31,41 @@ const Toolbar = (props) => {
                 <div className="toolbar_navigation-items">
                   <ul>
                     <li>
-                      <HashLink smooth to="/#section-4-content">
-                        {/* <a href="https://event.hackhub.com/event/oppohack2021" target="_blank" rel="noreferrer"> */}
-                        <div>SCHEDULE</div>
-                        {/* </a> */}
+                      <HashLink smooth to="/#section-10-portfolios">
+                        <div>PORTFOLIOS</div>
                       </HashLink>
                     </li>
-
-                    {/* <li>
-            <a href="/user">SPONSORS</a>
-            </li> */}
                     <li>
                       <HashLink smooth to="/#contact-container">
-                        <div>CONTACT</div>
+                        <div>CONTACT ME</div>
                       </HashLink>
                     </li>
-                    <li style={{ minWidth: "230px" }}>
-                      <Link to="/terms" target="_blank" rel="noreferrer">
-                        <div>TERMS OF SERVICE</div>
-                      </Link>
-                      {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer"><div>TERMS OF SERVICE</div></a> */}
-                    </li>
                     <li>
-                      <Link to="/privacy" target="_blank" rel="noreferrer">
-                        <div style={{minWidth:"160px"}}>PRIVACY POLICY</div>
-                      </Link>
+                      {!show && (
+                        <div
+                          onClick={() => setShow(true)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          <div>SERVICES</div>
+                        </div>
+                      )}
+                      <Alert show={show} variant="success">
+                        <Alert.Heading>What's going on?</Alert.Heading>
+                        <p>
+                          I am still working on service pages, please direct
+                          contact me via email if you need web development
+                          service.
+                        </p>
+                        <hr />
+                        <div className="d-flex justify-content-end">
+                          <Button
+                            onClick={() => setShow(false)}
+                            variant="outline-success"
+                          >
+                            Close me!
+                          </Button>
+                        </div>
+                      </Alert>
                     </li>
                   </ul>
                 </div>

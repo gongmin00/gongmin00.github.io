@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./sidedrawer.css";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
-const sideDrawer = (props) => {
+import { BrowserRouter as Router} from "react-router-dom";
+import { Alert, Button } from "react-bootstrap";
+const SideDrawer = (props) => {
   let drawerClasses = ["side-drawer"];
-
+  const [show, setShow] = useState(false);
   if (props.show) {
     drawerClasses = ["side-drawer", "open"];
   }
@@ -14,39 +14,41 @@ const sideDrawer = (props) => {
       <Router>
         <ul>
           <li>
-            <HashLink smooth to="/#section-4-content">
-              {/* <a href="/" target="_blank" rel="noreferrer">SCHEDULE</a> */}
-              <div>SCHEDULE</div>
+            <HashLink smooth to="/#section-10-portfolios">
+              <div>PORTFOLIOS</div>
             </HashLink>
           </li>
-          {/* <li>
-          <a href="/">SPONSORS</a>
-        </li> */}
           <li>
             <HashLink smooth to="/#contact-container">
-              {/* <a href="/">CONTACT</a> */}
               <div>CONTACT</div>
             </HashLink>
           </li>
           <li>
-            {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
-                  <div>TERMS OF SERVICE</div>
-                  </a> */}
-            <Link to="/terms" target="_blank" rel="noreferrer">
-              <div>TERMS OF SERVICE</div>
-            </Link>
-          </li>
-          <li>
-            {/* <a href="https://event.hackhub.com/signup_policy" target="_blank" rel="noreferrer">
-                  <div>TERMS OF SERVICE</div>
-                  </a> */}
-            <Link to="/privacy" target="_blank" rel="noreferrer">
-              <div>PRIVACY POLICY</div>
-            </Link>
+            {!show && (
+              <div onClick={() => setShow(true)} style={{ cursor: "pointer" }}>
+                <div>SERVICES</div>
+              </div>
+            )}
+            <Alert show={show} variant="success">
+              <Alert.Heading>What's going on?</Alert.Heading>
+              <p>
+                I am still working on service pages, please direct contact me
+                via email if you need web development service.
+              </p>
+              <hr />
+              <div className="d-flex justify-content-end">
+                <Button
+                  onClick={() => setShow(false)}
+                  variant="outline-success"
+                >
+                  Close me!
+                </Button>
+              </div>
+            </Alert>
           </li>
         </ul>
       </Router>
     </nav>
   );
 };
-export default sideDrawer;
+export default SideDrawer;

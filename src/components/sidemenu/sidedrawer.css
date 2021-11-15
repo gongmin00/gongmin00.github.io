@@ -1,15 +1,11 @@
-@font-face {
-  font-family: "Futura";
-  src: url(../../font/FuturaMediumBT.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap');
 * {
-    /* font-family: FZLanTingKanHei-R-Consolas; */
-    font-family: Futura;
+    font-family: "Roboto";
 }
 
 .side-drawer {
     height: 33%;
-    background: #211E1F;
+    background: #264653;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -39,14 +35,14 @@
   
   .side-drawer div {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #D3F3EE;
     font-size: 1.2rem;
     line-height: 32px;
   }
   
   .side-drawer div:hover,
   .side-drawer div:active {
-    color: #23EDE8;
+    color: #D3F3EE;
     text-decoration: none !important;
   }
   .side-drawer a:hover,
@@ -58,6 +54,9 @@
   @media screen and (min-width: 991px) {
     .side-drawer {
       display: none;
+    }
+    .alert-heading.h4{
+      color:#E76F51
     }
   }
   

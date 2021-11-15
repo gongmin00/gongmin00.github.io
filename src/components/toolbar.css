@@ -1,19 +1,16 @@
-@font-face {
-  font-family: "Futura";
-  src: url(../font/FuturaMediumBT.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap');
 * {
-  /* font-family: 'Inconsolata', monospace; */
-  font-family: Futura;
+  font-family: "Roboto";
 }
 .toolbar {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color:transparent;
     height: 150px;
     padding: 37px 0;
+    z-index: 10;
   }
   
   .toolbar_navigator {
@@ -23,12 +20,12 @@
     padding: 0 1rem;
   }
   
-  /* .toolbar_logo {
-    margin-left: 3rem;
-  } */
+  .toolbar_logo img {
+    max-width: 3rem;
+  }
   
   .toolbar_logo a {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
     font-size: 1.5rem;
   }
@@ -46,7 +43,7 @@
   }
   
   .toolbar_navigation-items li {
-    padding-left:47px;
+    margin-left: 20px;
   }
   
   .toolbar_navigation-items li {
@@ -56,22 +53,39 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffff;
+    min-width: 28%;
   }
-  /* .toolbar_navigation-items li :hover{
-    color:#23EDE8;
-    text-decoration: none;
+  .toolbar_navigation-items li div {
+    color: #264653;
   }
-   */
+
   .toolbar_navigation-items div:hover,
   .toolbar_navigation-items div:active {
-    color:#23EDE8;
+    color:#E76F51;
     text-decoration: none !important;
   }
   .toolbar_navigation-items a:hover,
   .toolbar_navigation-items a:active {
-    color:#23EDE8;
+    color:#E76F51;
     text-decoration: none !important;
+  }
+  button.btn.btn-outline-success{
+    color:#264653;
+    border-color: #264653;
+  }
+  button.btn.btn-outline-success:hover{
+    color:#D3F3EE;
+    border-color: #264653;
+    background-color: #264653;
+  }
+  button.btn.btn-outline-success:active{
+    color:#D3F3EE;
+    border-color: #264653;
+    background-color: #264653;
+  }
+  .fade.alert.alert-success.show >p {
+    text-align: justify;
   }
   @media screen and (max-width: 991px) {
     .toolbar_navigation-items {
@@ -81,8 +95,20 @@
       display: flex;
       justify-content: flex-end;
     }
+    .fade.alert.alert-success.show{
+      min-width: 100% !important;
+      right: 40% !important;
+    }
+    .alert-heading.h4{
+      color:#E76F51
+    }
   }
-  
+  .fade.alert.alert-success.show {
+    top: 45%;
+    min-width: 375px;
+    right: 100%;
+    z-index: 10;
+}
   @media screen and (min-width: 992px) {
     .toggle-btn {
       display: none;

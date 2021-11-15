@@ -24,29 +24,12 @@ const NavBar = () => {
       backdrop = <BackDrop click={backDropClickHandler} />;
     }
     return (
-      <div style={{ height: "100%" }}>
+      <div>
         <Toolbar drawerToggleClickHandler={drawerToggleClickHandler} />
         <SideDrawer show={state.sideDrawerOpen} />
         {backdrop}
       </div>
     );
-
-//   return (
-    // <div className="nav-container">
-    //     <div className="nav-logo">
-    //         <img src='images/nav-logo.png' alt="nav-logo"/>
-    //     </div>
-    //     <div className="nav-menu">
-    //         <ul className="nav-menu-list">
-    //             <li className="nav-menu-item">SCHEDULE</li>
-    //             <li className="nav-menu-item">SPONSORS</li>
-    //             <li className="nav-menu-item">CONTACT</li>
-    //         </ul>
-    //     </div>
-    // </div>
-   
-   
-//   );
 };
 
 export default NavBar;

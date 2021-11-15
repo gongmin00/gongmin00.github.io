@@ -1,19 +1,12 @@
-/* .react-pdf__Document{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap');
 *{
-    font-family: Futura;
-    color: #ffffff;
+    font-family: "Roboto";
+    color: #fffff;
     line-height: 32px;
     font-weight: 400px;
     font-size: 20px;
   }
-  @font-face {
-    font-family: "Futura";
-    src: url(../font/FuturaMediumBT.ttf);
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap');
 .page-container{
     text-align: center;
     margin-top:20px;
@@ -26,8 +19,8 @@
     display: none;
 }
 .page-btn{
-    background-color: #73E4E1;
-    border:#73E4E1;
+    background-color: #08fdd8;
+    border:#08fdd8;
     margin: 20px;
     border-radius: 5px;
     min-width: 73px;

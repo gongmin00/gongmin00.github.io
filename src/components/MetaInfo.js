@@ -1,15 +1,15 @@
 import Helment from "react-helmet";
-import favicon from "../images/section-10-icon.png";
+import favicon from "../images/favicon_img.png";
 // import preview from "../images/preview.png"
 const MetaInfo = () => {
   return (
     <Helment>
-      <title>OPPOHack2021</title>
+      <title>Min Gong | My Portfolios</title>
       <meta
         name="description"
-        content="OPPOHack, the Global Innovation Competition"
+        content="Min Gong, A Web Developer"
       />
-      <meta property="og:url" content="https://oppohack.com" />
+     
       <link rel="icon" type="image/png" href={favicon} sizes="192x192" />
     </Helment>
   );
