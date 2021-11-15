@@ -6,8 +6,6 @@ import Footer from "./components/footer";
 import MetaInfo from "./components/MetaInfo";
 import MainContent from "./mainContent";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Terms from "./components/terms"
-import Privacy from "./components/privacy"
 const App = () => {
   // function checkLocation(){
   //   let location = useLocation()
@@ -22,8 +20,6 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/"><MainContent /></Route>
-          <Route path="/terms"><Terms /></Route>
-          <Route path="/privacy"><Privacy /></Route>
         </Switch>
       </Router>
       <Footer />
