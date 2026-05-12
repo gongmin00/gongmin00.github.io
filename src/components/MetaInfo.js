@@ -1,17 +1,16 @@
-import Helment from "react-helmet";
+import Helmet from "react-helmet";
 import favicon from "../images/favicon_img.png";
-// import preview from "../images/preview.png"
+
 const MetaInfo = () => {
   return (
-    <Helment>
-      <title>Min Gong | My Portfolios</title>
+    <Helmet>
+      <title>Min Gong — Full-stack developer</title>
       <meta
         name="description"
-        content="Min Gong, A Web Developer"
+        content="Min Gong — full-stack developer based in Vancouver. React, Next.js, React Native. Open to roles and freelance work."
       />
-     
       <link rel="icon" type="image/png" href={favicon} sizes="192x192" />
-    </Helment>
+    </Helmet>
   );
 };
 
