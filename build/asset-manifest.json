@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d65eef9.chunk.css",
+    "main.js": "/static/js/main.bba21f7e.chunk.js",
+    "main.js.map": "/static/js/main.bba21f7e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.11f320ca.js",
+    "runtime-main.js.map": "/static/js/runtime-main.11f320ca.js.map",
+    "static/js/2.94daa281.chunk.js": "/static/js/2.94daa281.chunk.js",
+    "static/js/2.94daa281.chunk.js.map": "/static/js/2.94daa281.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8d65eef9.chunk.css.map": "/static/css/main.8d65eef9.chunk.css.map",
+    "static/js/2.94daa281.chunk.js.LICENSE.txt": "/static/js/2.94daa281.chunk.js.LICENSE.txt",
+    "static/media/Oppohack.ec72628f.png": "/static/media/Oppohack.ec72628f.png",
+    "static/media/azure.ba088b98.png": "/static/media/azure.ba088b98.png",
+    "static/media/cotini.23cc4b9c.png": "/static/media/cotini.23cc4b9c.png",
+    "static/media/deconova.8a7c03e1.png": "/static/media/deconova.8a7c03e1.png",
+    "static/media/favicon_img.3655b52a.png": "/static/media/favicon_img.3655b52a.png",
+    "static/media/forestcure.8c809202.png": "/static/media/forestcure.8c809202.png",
+    "static/media/guaranti.8de5830e.png": "/static/media/guaranti.8de5830e.png",
+    "static/media/markus.89073d6e.png": "/static/media/markus.89073d6e.png",
+    "static/media/snowgoose.35364fb1.png": "/static/media/snowgoose.35364fb1.png",
+    "static/media/uma.6b10710d.png": "/static/media/uma.6b10710d.png",
+    "static/media/westernstar.67b3aef0.png": "/static/media/westernstar.67b3aef0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11f320ca.js",
+    "static/js/2.94daa281.chunk.js",
+    "static/css/main.8d65eef9.chunk.css",
+    "static/js/main.bba21f7e.chunk.js"
+  ]
+}

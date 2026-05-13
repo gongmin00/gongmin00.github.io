@@ -1,0 +1,25 @@
+{
+  "short_name": "OPPOHack2021",
+  "name": "OPPOHack, the Global Innovation Competition",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "123x29"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "123x29"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fffff000",
+  "background_color": "#fffff"
+}
