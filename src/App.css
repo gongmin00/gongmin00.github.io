@@ -178,6 +178,8 @@ section:last-child { padding-bottom: 0; }
 .hero h1 .accent {
   color: var(--accent);
   font-weight: 600;
+  font-size: clamp(22px, 3.2vw, 38px);
+  letter-spacing: -0.015em;
 }
 .hero .lede {
   font-size: 22px;
@@ -252,6 +254,28 @@ section:last-child { padding-bottom: 0; }
   font-size: 15px;
   color: var(--ink);
   margin: 0;
+}
+
+/* ====== Portfolio ====== */
+.portfolio-intro {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 0 40px;
+}
+
+.tier-head {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin: 0 0 24px;
+}
+
+.project-grid + .tier-head {
+  margin-top: 56px;
 }
 
 /* ====== Projects ====== */
@@ -330,6 +354,11 @@ section:last-child { padding-bottom: 0; }
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.04em;
+}
+.project .visit.archived {
+  color: var(--muted);
+  border-bottom: none;
+  cursor: default;
 }
 
 /* ====== Freelance ====== */
@@ -441,6 +470,32 @@ section:last-child { padding-bottom: 0; }
   transition: background 160ms ease;
 }
 .contact-card .cta:hover { background: #15293F; }
+
+.contact-cta-group {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 108px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  padding: 0 16px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+.copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+.copy-btn svg { width: 14px; height: 14px; }
+.copy-btn.copied { color: #2BAE66; border-color: #2BAE66; }
 
 /* ====== Footer ====== */
 .site-footer {
